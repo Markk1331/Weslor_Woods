@@ -1,0 +1,8 @@
+n = int(input())
+s = set(map(int, input().strip().split(" ")))
+p = int(input())
+u = set(map(int, input().strip().split(" ")))
+x = s.difference(u)
+y = u.difference(s)
+r = x.union(y)
+print(*sorted(r, key = int), sep= '\n')
